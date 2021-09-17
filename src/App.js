@@ -1,6 +1,6 @@
 // Import libraries
 import React from "react";
-import { Route, Switch, path } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 // Import styles
 import "./App.css";
 // Import components

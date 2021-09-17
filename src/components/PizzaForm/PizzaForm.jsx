@@ -30,7 +30,6 @@ const PizzaForm = (props) => {
         console.error("[getOrders() CATCH]", error);
       });
   };
-
   const postNewOrder = (newOrder) => {
     axios
       .post("https://reqres.in/api/orders", newOrder)
@@ -47,7 +46,6 @@ const PizzaForm = (props) => {
         setFormValues(initialFormData["values"]);
       });
   };
-
   const validateInput = (inputName, inputValue) => {
     yup
       // Find the expected value
@@ -63,14 +61,12 @@ const PizzaForm = (props) => {
         setFormErrors({ ...formErrors, [inputName]: error.errors[0] });
       });
   };
-
   const updateInput = (inputName, inputValue) => {
     // Check if the input is valid
     validateInput(inputName, inputValue);
     // Update the form
     setFormValues({ ...formValues, [inputName]: inputValue });
   };
-
   const submitForm = () => {
     const newOrder = {
       customerName: formValues["customerName"].trim(),
@@ -97,13 +93,13 @@ const PizzaForm = (props) => {
   };
 
   // ========== EVENT HANDLERS
-
   const onSubmit = (event) => {
     // Prevent page refresh
     event.preventDefault();
     submitForm();
+    getOrders();
+    console.log(`FORM SUBMITTED! Current orders: ${orders}`);
   };
-
   const onChange = (event) => {
     // Get input attributes
     const { name, value, checked, type } = event.target;
@@ -149,6 +145,7 @@ const PizzaForm = (props) => {
         {/* CUSTOMER NAME */}
         <div className="inputAreaLabel">
           <h2>Customer Name</h2>
+          <p>Required</p>
         </div>
         <p className="inputError">{formErrors.customerName}</p>
         <label>
@@ -183,6 +180,7 @@ const PizzaForm = (props) => {
           <h2>Choice of Sauce</h2>
           <p>Required</p>
         </div>
+        <p className="inputError">{formErrors.sauce}</p>
         <label>
           <input
             type="radio"

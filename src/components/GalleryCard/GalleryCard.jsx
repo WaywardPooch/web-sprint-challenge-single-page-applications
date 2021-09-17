@@ -8,7 +8,7 @@ const GalleryCard = (props) => {
 
   return (
     <div className="gallery-card">
-      <img src={foodIcon} />
+      <img alt="icon of fork and knife as placeholder" src={foodIcon} />
       <h3>{title}</h3>
       <p>{description}</p>
       <button>BUY: ${price}</button>
