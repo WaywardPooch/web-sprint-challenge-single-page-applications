@@ -1,5 +1,9 @@
 section.food-gallery {
-  background-color: coral;
+  background-color: #eee;
+}
+section.food-gallery h2 {
+  margin-top: 3rem;
+  text-align: center;
 }
 section.food-gallery div.gallery-content {
   display: flex;

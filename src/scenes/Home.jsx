@@ -11,6 +11,8 @@ const HeroDetails = {
   title: "Your favorite food, delivered while coding",
   hasButton: true,
   buttonText: "Pizza?",
+  buttonRoute: "/pizza",
+  buttonID: "order-pizza",
 };
 
 const HomePage = () => {

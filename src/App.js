@@ -5,13 +5,13 @@ import { Route, Switch, path } from "react-router-dom";
 import "./App.css";
 // Import components
 import HomePage from "./scenes/Home.jsx";
-import HelpPage from "./scenes/Help.jsx";
+import HelpPage from "./scenes/Order.jsx";
 
 // Create component
 const App = () => {
   return (
     <Switch>
-      <Route exact path={`/help`}>
+      <Route exact path={`/order`}>
         <HelpPage />
       </Route>
       <Route exact path={`/`}>

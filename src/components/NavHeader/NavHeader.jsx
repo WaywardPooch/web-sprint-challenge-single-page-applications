@@ -17,8 +17,8 @@ const NavHeader = () => {
             <NavLink to={`/`}>
               <button>Home</button>
             </NavLink>
-            <NavLink to={`/help`}>
-              <button>Help</button>
+            <NavLink to={`/order`}>
+              <button>Order</button>
             </NavLink>
           </nav>
         </div>

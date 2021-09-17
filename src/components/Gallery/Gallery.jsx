@@ -9,6 +9,7 @@ const Gallery = (props) => {
 
   return (
     <section className="food-gallery">
+      <h2>Our Selection</h2>
       <div className="gallery-content">
         {foods.map((card) => {
           return <GalleryCard info={card} />;
