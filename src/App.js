@@ -11,11 +11,11 @@ import HelpPage from "./scenes/Help.jsx";
 const App = () => {
   return (
     <Switch>
-      <Route exact path={`/`}>
-        <HomePage />
-      </Route>
       <Route exact path={`/help`}>
         <HelpPage />
+      </Route>
+      <Route exact path={`/`}>
+        <HomePage />
       </Route>
     </Switch>
   );

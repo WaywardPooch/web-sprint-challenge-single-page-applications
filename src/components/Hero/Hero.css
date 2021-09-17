@@ -1,0 +1,26 @@
+section {
+  background-image: url("../../assets/Pizza.jpg");
+}
+section div.hero-content {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 4rem;
+}
+section div.hero-content h1 {
+  color: #eee;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+section div.hero-content button {
+  background-color: #eee;
+  border-radius: 4px;
+  border: none;
+  padding: 1rem 4rem;
+  transition: 200ms;
+}
+section div.hero-content button:hover {
+  background-color: coral;
+  color: #eee;
+}
