@@ -11,8 +11,8 @@ const Gallery = (props) => {
     <section className="food-gallery">
       <h2>Our Selection</h2>
       <div className="gallery-content">
-        {foods.map((card) => {
-          return <GalleryCard info={card} />;
+        {foods.map((card, index) => {
+          return <GalleryCard key={index} info={card} />;
         })}
       </div>
     </section>

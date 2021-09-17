@@ -36,6 +36,7 @@ const PizzaForm = (props) => {
       .then((response) => {
         // Post the new order to the list of orders
         setOrders([response.data, ...orders]);
+        console.log("POST NEW ORDER LOG", orders);
         // Wipe the inputs clean on submit
         setFormValues(initialFormData["values"]);
       })
@@ -90,6 +91,7 @@ const PizzaForm = (props) => {
       additionalInfo: formValues["additionalInfo"],
     };
     postNewOrder(newOrder);
+    console.log(orders);
   };
 
   // ========== EVENT HANDLERS
@@ -97,8 +99,6 @@ const PizzaForm = (props) => {
     // Prevent page refresh
     event.preventDefault();
     submitForm();
-    getOrders();
-    console.log(`FORM SUBMITTED! Current orders: ${orders}`);
   };
   const onChange = (event) => {
     // Get input attributes
