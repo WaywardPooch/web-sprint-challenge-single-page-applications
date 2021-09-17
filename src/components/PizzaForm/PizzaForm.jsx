@@ -1,9 +1,12 @@
 // Import libraries
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import * as yup from "yup";
 // Import styles
 import "./PizzaForm.css";
 // Import data
 import initialFormData from "../../data/initialFormData.json";
+import formSchema from "../../data/formSchema.js";
 
 const PizzaForm = (props) => {
   // ========== STATES
@@ -70,6 +73,7 @@ const PizzaForm = (props) => {
     postNewOrder(newOrder);
   };
 
+  // ========== EVENT HANDLERS
   const onSubmit = (event) => {
     // Prevent page refresh
     event.preventDefault();
@@ -90,6 +94,24 @@ const PizzaForm = (props) => {
     updateInput(name, newValue);
   };
 
+  // ========== SIDE EFFECTS
+
+  // After first load...
+  useEffect(() => {
+    // ...get the list of orders from the API.
+    getOrders();
+  }, []);
+
+  // When the user updates form inputs...
+  useEffect(() => {
+    formSchema
+      // ...check if their form is complete...
+      .isValid(formValues)
+      // ... and if it is, enable the submit button.
+      .then((valid) => setSubmitDisabled(!valid));
+  }, [formValues]);
+
+  // ========== COMPONENT MARKUP
   return (
     <section className="pizzaOrderSection">
       {/* TITLE AREA */}
