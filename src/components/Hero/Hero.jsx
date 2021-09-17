@@ -5,7 +5,7 @@ import "./Hero.css";
 const Hero = (props) => {
   const { title, hasButton, buttonText } = props.info;
   return (
-    <section>
+    <section className="hero">
       <div className="hero-content">
         <h1>{title}</h1>
         {hasButton && <button>{buttonText}</button>}

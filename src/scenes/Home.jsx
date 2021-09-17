@@ -14,8 +14,6 @@ const HeroDetails = {
 };
 
 const HomePage = () => {
-  const [galleryCards, setGalleryCards] = useState([]);
-
   return (
     <>
       <NavHeader />
