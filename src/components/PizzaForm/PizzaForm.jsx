@@ -1,10 +1,21 @@
-import React from "react";
-
+// Import libraries
+import React, { useState } from "react";
+// Import styles
 import "./PizzaForm.css";
+// Import data
+import initialFormErrors from "../../data/initialFormErrors.json";
 
 const PizzaForm = (props) => {
-  const { formErrors, submitForm, updateInput, submitDisabled } = props;
+  // ========== VARIABLES
+  const initialSubmitDisabled = true;
+  const initialOrders = [];
 
+  // ========== STATES
+  const [orders, setOrders] = useState(initialOrders);
+  const [submitDisabled, setSubmitDisabled] = useState(initialSubmitDisabled);
+  const [formErrors, setFormErrors] = useState(initialFormErrors);
+
+  // ========== HELPERS
   const onSubmit = (event) => {
     // Prevent page refresh
     event.preventDefault();
