@@ -10,6 +10,8 @@ section.pizzaOrderSection div.pizzaOrderTitle h2 {
   margin-bottom: 1rem;
 }
 section.pizzaOrderSection form {
+  display: flex;
+  flex-flow: column nowrap;
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -17,17 +19,33 @@ section.pizzaOrderSection form div.inputAreaLabel {
   background-color: #ccc;
   padding: 2rem;
 }
+section.pizzaOrderSection form button {
+  background-color: coral;
+  border-radius: 4px;
+  border: none;
+  color: #eee;
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: 200ms;
+}
+section.pizzaOrderSection form button:hover {
+  background-color: white;
+  border: solid 1px #2f2f2f;
+  color: #2f2f2f;
+}
 section.pizzaOrderSection form label {
   display: flex;
   font-size: 2rem;
-  margin: 2rem;
+  margin: 1.6rem;
 }
 section.pizzaOrderSection form label select {
   margin: 0 1rem;
   min-width: 15rem;
 }
 section.pizzaOrderSection form label input.additionalInfo {
-  height: 2rem;
   font-size: 1.6rem;
+  height: 2rem;
   width: 100%;
 }

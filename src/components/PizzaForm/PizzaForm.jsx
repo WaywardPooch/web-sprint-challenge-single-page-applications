@@ -13,6 +13,15 @@ const PizzaForm = () => {
 
       {/* FORM AREA */}
       <form>
+        {/* CUSTOMER NAME */}
+        <div className="inputAreaLabel">
+          <h2>Customer Name</h2>
+        </div>
+        <label>
+          Name:
+          <input type="text" name="customerName" placeholder="First Last" />
+        </label>
+
         {/* PIZZA SIZE */}
         <div className="inputAreaLabel">
           <h2>Choice of Size</h2>
@@ -130,9 +139,11 @@ const PizzaForm = () => {
           <input
             className="additionalInfo"
             type="text"
+            name="additionalInfo"
             placeholder="Write any additonal information, here."
           />
         </label>
+        <button>Place Order</button>
       </form>
     </section>
   );
