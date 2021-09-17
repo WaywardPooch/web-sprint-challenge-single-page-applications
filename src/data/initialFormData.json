@@ -1,0 +1,30 @@
+{
+  "values": {
+    "customerName": "",
+    "pizzaSize": "small",
+    "sauce": "",
+    "pepperoni": false,
+    "sausage": false,
+    "canadianBacon": false,
+    "spicyItalianSausage": false,
+    "grilledChicken": false,
+    "onions": false,
+    "greenPepper": false,
+    "dicedTomatoes": false,
+    "blackOlives": false,
+    "roastedGarlic": false,
+    "artichokeHearts": false,
+    "threeCheeses": false,
+    "pineapple": false,
+    "extraCheese": false,
+    "glutenFreeCrust": false,
+    "additionalInfo": ""
+  },
+  "errors": {
+    "customerName": "",
+    "pizzaSize": "",
+    "sauce": ""
+  },
+  "submitDisabled": true,
+  "orders": []
+}
