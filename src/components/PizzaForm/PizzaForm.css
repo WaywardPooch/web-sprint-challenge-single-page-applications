@@ -10,19 +10,24 @@ section.pizzaOrderSection div.pizzaOrderTitle h2 {
   margin-bottom: 1rem;
 }
 section.pizzaOrderSection form {
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 1000px;
 }
 section.pizzaOrderSection form div.inputAreaLabel {
   background-color: #ccc;
   padding: 2rem;
 }
 section.pizzaOrderSection form label {
-  font-size: 2rem;
   display: flex;
+  font-size: 2rem;
   margin: 2rem;
 }
 section.pizzaOrderSection form label select {
   margin: 0 1rem;
   min-width: 15rem;
+}
+section.pizzaOrderSection form label input.additionalInfo {
+  height: 2rem;
+  font-size: 1.6rem;
+  width: 100%;
 }
