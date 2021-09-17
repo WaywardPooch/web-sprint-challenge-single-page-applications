@@ -8,7 +8,7 @@ const Gallery = (props) => {
   const { foods } = props;
 
   return (
-    <section>
+    <section className="food-gallery">
       <div className="gallery-content">
         {foods.map((card) => {
           return <GalleryCard info={card} />;

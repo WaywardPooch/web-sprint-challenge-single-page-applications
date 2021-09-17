@@ -9,7 +9,6 @@ section.hero div.hero-content {
   display: flex;
   flex-direction: column;
   padding: 20rem 4rem;
-  width: 100%;
 }
 section.hero div.hero-content h1 {
   color: #eee;

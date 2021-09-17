@@ -1,14 +1,32 @@
 [
   {
-    "title": "SuperBurger",
-    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab."
+    "title": "Krabby Patty",
+    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab, made with the cheapest ingredients while still being safe to eat.",
+    "price": 1.99
   },
   {
-    "title": "SuperBurger",
-    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab."
+    "title": "Krabby Patty",
+    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab, made with the cheapest ingredients while still being safe to eat.",
+    "price": 1.99
   },
   {
-    "title": "SuperBurger",
-    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab."
+    "title": "Krabby Patty",
+    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab, made with the cheapest ingredients while still being safe to eat.",
+    "price": 1.99
+  },
+  {
+    "title": "Krabby Patty",
+    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab, made with the cheapest ingredients while still being safe to eat.",
+    "price": 1.99
+  },
+  {
+    "title": "Krabby Patty",
+    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab, made with the cheapest ingredients while still being safe to eat.",
+    "price": 1.99
+  },
+  {
+    "title": "Krabby Patty",
+    "description": "Juicy and delicious burger, delicately handcrafted by our finest frycook, Mr. Squarepants, former Elite Chef of the Krusty Krab, made with the cheapest ingredients while still being safe to eat.",
+    "price": 1.99
   }
 ]

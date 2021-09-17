@@ -1,9 +1,11 @@
-section {
+section.food-gallery {
   background-color: coral;
-  display: flex;
 }
-section div.gallery-content {
-  padding: 10rem;
+section.food-gallery div.gallery-content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem;
 }

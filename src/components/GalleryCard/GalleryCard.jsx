@@ -7,9 +7,10 @@ const GalleryCard = (props) => {
   const { title, description } = props.info;
 
   return (
-    <div>
+    <div className="gallery-card">
       <img src={foodIcon} />
       <h3>{title}</h3>
+      <h4>Description:</h4>
       <p>{description}</p>
     </div>
   );

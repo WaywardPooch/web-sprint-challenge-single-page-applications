@@ -1,0 +1,23 @@
+div.gallery-card {
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 2rem;
+  width: 30rem;
+}
+div.gallery-card img {
+  max-height: 20rem;
+  object-fit: cover;
+  width: 100%;
+}
+div.gallery-card h3 {
+  font-size: 2.4rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+div.gallery-card p {
+  padding: 0.5rem 2rem;
+  text-align: justify;
+}
