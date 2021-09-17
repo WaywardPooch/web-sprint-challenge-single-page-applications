@@ -2,22 +2,31 @@ section.pizzaOrderSection {
   div.pizzaOrderTitle {
     align-items: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     padding: 2rem;
 
     h2 {
       font-size: 3rem;
+      margin-bottom: 1rem;
     }
   }
 
   form {
+    max-width: 1000px;
+    margin: 0 auto;
     div.inputAreaLabel {
       background-color: #ccc;
       padding: 2rem;
     }
     label {
       font-size: 2rem;
+      display: flex;
+      margin: 2rem;
+      select {
+        margin: 0 1rem;
+        min-width: 15rem;
+      }
     }
   }
 }

@@ -15,7 +15,7 @@ const PizzaForm = () => {
           <p>Required</p>
         </div>
         <label>
-          Size
+          Size:
           <select name="pizzaSize" id="pizzaSizeDropdown">
             <option value="small">Small</option>
             <option value="medium">Medium</option>

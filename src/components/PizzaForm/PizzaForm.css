@@ -1,12 +1,17 @@
 section.pizzaOrderSection div.pizzaOrderTitle {
   align-items: center;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   padding: 2rem;
 }
 section.pizzaOrderSection div.pizzaOrderTitle h2 {
   font-size: 3rem;
+  margin-bottom: 1rem;
+}
+section.pizzaOrderSection form {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 section.pizzaOrderSection form div.inputAreaLabel {
   background-color: #ccc;
@@ -14,4 +19,10 @@ section.pizzaOrderSection form div.inputAreaLabel {
 }
 section.pizzaOrderSection form label {
   font-size: 2rem;
+  display: flex;
+  margin: 2rem;
+}
+section.pizzaOrderSection form label select {
+  margin: 0 1rem;
+  min-width: 15rem;
 }
