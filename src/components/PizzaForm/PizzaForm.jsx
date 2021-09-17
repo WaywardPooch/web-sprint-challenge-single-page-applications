@@ -74,6 +74,22 @@ const PizzaForm = (props) => {
   };
 
   // ========== EVENT HANDLERS
+  const validateInput = (inputName, inputValue) => {
+    yup
+      // Find the expected value
+      .reach(formSchema, inputName)
+      // Compare the input value to the expected value
+      .validate(inputValue)
+      // Display no error if inputs are good
+      .then(() => {
+        setFormErrors({ ...formErrors, [inputName]: "" });
+      })
+      // Log any input errors if present
+      .catch((error) => {
+        setFormErrors({ ...formErrors, [inputName]: error.errors[0] });
+      });
+  };
+
   const onSubmit = (event) => {
     // Prevent page refresh
     event.preventDefault();
