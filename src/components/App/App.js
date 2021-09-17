@@ -1,12 +1,13 @@
+// Import libraries
 import React from "react";
-
+// Import styles
+import "./App.css";
+// Import components
+import NavHeader from "../NavHeader/NavHeader.jsx";
+// Create component
 const App = () => {
-  return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
-  );
+  return <NavHeader />;
 };
 
+// Export component
 export default App;
