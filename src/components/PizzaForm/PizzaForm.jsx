@@ -178,7 +178,7 @@ const PizzaForm = (props) => {
           <p>Choose up to 1</p>
         </div>
         <label>
-          <input type="checkbox" name="extraCheese" onChange={onChange} />
+          <input type="checkbox" name="glutenFreeCrust" onChange={onChange} />
           Gluten-Free Crust
         </label>
 
