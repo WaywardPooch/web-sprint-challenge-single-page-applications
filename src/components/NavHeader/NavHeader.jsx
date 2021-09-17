@@ -1,5 +1,6 @@
 // Import libraries
 import React from "react";
+import { NavLink } from "react-router-dom";
 // Import styles
 import "./NavHeader.css";
 
@@ -13,8 +14,12 @@ const NavHeader = () => {
         </div>
         <div className="navbar-right">
           <nav>
-            <button>Home</button>
-            <button>Help</button>
+            <NavLink to={`/`}>
+              <button>Home</button>
+            </NavLink>
+            <NavLink to={`/help`}>
+              <button>Help</button>
+            </NavLink>
           </nav>
         </div>
       </div>
