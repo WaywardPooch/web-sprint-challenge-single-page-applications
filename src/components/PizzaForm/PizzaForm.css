@@ -1,0 +1,17 @@
+section.pizzaOrderSection div.pizzaOrderTitle {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+section.pizzaOrderSection div.pizzaOrderTitle h2 {
+  font-size: 3rem;
+}
+section.pizzaOrderSection form div.inputAreaLabel {
+  background-color: #ccc;
+  padding: 2rem;
+}
+section.pizzaOrderSection form label {
+  font-size: 2rem;
+}
