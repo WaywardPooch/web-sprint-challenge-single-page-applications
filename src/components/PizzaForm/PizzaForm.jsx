@@ -15,6 +15,36 @@ const PizzaForm = (props) => {
   const [formErrors, setFormErrors] = useState(initialFormData["errors"]);
 
   // ========== HELPERS
+  const getOrders = () => {
+    axios
+      .get("https://reqres.in/api/orders")
+      .then((response) => {
+        // Update the list of orders from the API
+        setOrders(response.data);
+      })
+      .catch((error) => {
+        // If orders cannot be updated, log the error
+        console.error("[getOrders() CATCH]", error);
+      });
+  };
+
+  const postNewOrder = (newOrder) => {
+    axios
+      .post("https://reqres.in/api/orders", newOrder)
+      .then((response) => {
+        // Post the new order to the list of orders
+        setOrders([response.data, ...orders]);
+        // Wipe the inputs clean on submit
+        setFormValues(initialFormData["values"]);
+      })
+      .catch((error) => {
+        // If the order cannot be submitted, log the error
+        console.error("[postNewOrder() CATCH]", error);
+        // Wipe the inputs clean on submit
+        setFormValues(initialFormData["values"]);
+      });
+  };
+
   const submitForm = () => {
     const newOrder = {
       customerName: formValues["customerName"].trim(),
