@@ -8,16 +8,37 @@ import initialFormData from "../../data/initialFormData.json";
 const PizzaForm = (props) => {
   // ========== STATES
   const [orders, setOrders] = useState(initialFormData["orders"]);
-  const [submitDisabled, setSubmitDisabled] = useState(initialFormData["submitDisabled"]);
+  const [submitDisabled, setSubmitDisabled] = useState(
+    initialFormData["submitDisabled"]
+  );
   const [formValues, setFormValues] = useState(initialFormData["values"]);
   const [formErrors, setFormErrors] = useState(initialFormData["errors"]);
 
   // ========== HELPERS
   const submitForm = () => {
     const newOrder = {
-      customerName: 
-    }
-  }
+      customerName: formValues["customerName"].trim(),
+      pizzaSize: formValues["pizzaSize"],
+      sauce: formValues["sauce"],
+      pepperoni: formValues["pepperoni"],
+      sausage: formValues["sausage"],
+      canadianBacon: formValues["canadianBacon"],
+      spicyItalianSausage: formValues["spicyItalianSausage"],
+      grilledChicken: formValues["grilledChicken"],
+      onions: formValues["onions"],
+      greenPepper: formValues["greenPepper"],
+      dicedTomatoes: formValues["dicedTomatoes"],
+      blackOlives: formValues["blackOlives"],
+      roastedGarlic: formValues["roastedGarlic"],
+      artichokeHearts: formValues["artichokeHearts"],
+      threeCheeses: formValues["threeCheeses"],
+      pineapple: formValues["pineapple"],
+      extraCheese: formValues["extraCheese"],
+      glutenFreeCrust: formValues["glutenFreeCrust"],
+      additionalInfo: formValues["additionalInfo"],
+    };
+    postNewOrder(newOrder);
+  };
 
   const onSubmit = (event) => {
     // Prevent page refresh
