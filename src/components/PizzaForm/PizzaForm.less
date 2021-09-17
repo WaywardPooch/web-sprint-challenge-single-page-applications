@@ -22,6 +22,12 @@ section.pizzaOrderSection {
       background-color: #ccc;
       padding: 2rem;
     }
+
+    p.inputError {
+      color: red;
+      font-weight: bold;
+    }
+
     button {
       background-color: coral;
       border-radius: 4px;
@@ -37,6 +43,12 @@ section.pizzaOrderSection {
         background-color: white;
         border: solid 1px #2f2f2f;
         color: #2f2f2f;
+      }
+
+      &:disabled {
+        background-color: #ccc;
+        border: none;
+        color: #eee;
       }
     }
 

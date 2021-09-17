@@ -48,6 +48,29 @@ const PizzaForm = (props) => {
       });
   };
 
+  const validateInput = (inputName, inputValue) => {
+    yup
+      // Find the expected value
+      .reach(formSchema, inputName)
+      // Compare the input value to the expected value
+      .validate(inputValue)
+      // Display no error if inputs are good
+      .then(() => {
+        setFormErrors({ ...formErrors, [inputName]: "" });
+      })
+      // Log any input errors if present
+      .catch((error) => {
+        setFormErrors({ ...formErrors, [inputName]: error.errors[0] });
+      });
+  };
+
+  const updateInput = (inputName, inputValue) => {
+    // Check if the input is valid
+    validateInput(inputName, inputValue);
+    // Update the form
+    setFormValues({ ...formValues, [inputName]: inputValue });
+  };
+
   const submitForm = () => {
     const newOrder = {
       customerName: formValues["customerName"].trim(),
@@ -74,21 +97,6 @@ const PizzaForm = (props) => {
   };
 
   // ========== EVENT HANDLERS
-  const validateInput = (inputName, inputValue) => {
-    yup
-      // Find the expected value
-      .reach(formSchema, inputName)
-      // Compare the input value to the expected value
-      .validate(inputValue)
-      // Display no error if inputs are good
-      .then(() => {
-        setFormErrors({ ...formErrors, [inputName]: "" });
-      })
-      // Log any input errors if present
-      .catch((error) => {
-        setFormErrors({ ...formErrors, [inputName]: error.errors[0] });
-      });
-  };
 
   const onSubmit = (event) => {
     // Prevent page refresh
@@ -142,6 +150,7 @@ const PizzaForm = (props) => {
         <div className="inputAreaLabel">
           <h2>Customer Name</h2>
         </div>
+        <p className="inputError">{formErrors.customerName}</p>
         <label>
           Name:
           <input
@@ -158,9 +167,11 @@ const PizzaForm = (props) => {
           <h2>Choice of Size</h2>
           <p>Required</p>
         </div>
+        <p className="inputError">{formErrors.pizzaSize}</p>
         <label>
           Size:
-          <select name="pizzaSize" id="size-dropdown">
+          <select name="pizzaSize" id="size-dropdown" onChange={onChange}>
+            <option value="unselected">Please select a size</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>

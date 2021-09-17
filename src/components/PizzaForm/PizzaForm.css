@@ -19,6 +19,10 @@ section.pizzaOrderSection form div.inputAreaLabel {
   background-color: #ccc;
   padding: 2rem;
 }
+section.pizzaOrderSection form p.inputError {
+  color: red;
+  font-weight: bold;
+}
 section.pizzaOrderSection form button {
   background-color: coral;
   border-radius: 4px;
@@ -34,6 +38,11 @@ section.pizzaOrderSection form button:hover {
   background-color: white;
   border: solid 1px #2f2f2f;
   color: #2f2f2f;
+}
+section.pizzaOrderSection form button:disabled {
+  background-color: #ccc;
+  border: none;
+  color: #eee;
 }
 section.pizzaOrderSection form label {
   display: flex;
