@@ -1,7 +1,7 @@
 section.hero {
   background-image: url("../../assets/Pizza.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 section.hero div.hero-content {
   align-items: center;
@@ -15,14 +15,15 @@ section.hero div.hero-content h1 {
   margin-bottom: 3rem;
   text-align: center;
 }
-section.hero div.hero-content button {
+section.hero div.hero-content a {
   background-color: #eee;
   border-radius: 4px;
   border: none;
   padding: 1rem 4rem;
+  text-decoration: none;
   transition: 200ms;
 }
-section.hero div.hero-content button:hover {
+section.hero div.hero-content a:hover {
   background-color: coral;
   color: #eee;
 }

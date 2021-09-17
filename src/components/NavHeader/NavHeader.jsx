@@ -14,11 +14,11 @@ const NavHeader = () => {
         </div>
         <div className="navbar-right">
           <nav>
-            <NavLink to={`/`}>
-              <button>Home</button>
+            <NavLink activeClassName="activePage" to={`/`}>
+              Home
             </NavLink>
-            <NavLink to={`/order`}>
-              <button>Order</button>
+            <NavLink activeClassName="activePage" to={`/pizza`}>
+              Order
             </NavLink>
           </nav>
         </div>
