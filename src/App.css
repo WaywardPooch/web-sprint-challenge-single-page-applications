@@ -41,12 +41,13 @@
   src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
 }
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 body {
-  font-family: "Open Sans", sans-serif;
   background-color: #eee;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
 }
 h1,
 h2,
