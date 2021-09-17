@@ -7,14 +7,16 @@ import "./NavHeader.css";
 const NavHeader = () => {
   return (
     <header>
-      <div className="navbar-left">
-        <h2>Lambda Eats</h2>
-      </div>
-      <div className="navbar-right">
-        <nav>
-          <button>Home</button>
-          <button>Help</button>
-        </nav>
+      <div className="header-content">
+        <div className="navbar-left">
+          <h2>Lambda Eats</h2>
+        </div>
+        <div className="navbar-right">
+          <nav>
+            <button>Home</button>
+            <button>Help</button>
+          </nav>
+        </div>
       </div>
     </header>
   );

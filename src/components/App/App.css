@@ -46,9 +46,10 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #eee;
 }
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 p,
 a,
