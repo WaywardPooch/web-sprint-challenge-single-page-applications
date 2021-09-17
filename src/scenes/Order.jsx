@@ -3,7 +3,7 @@ import React from "react";
 import NavHeader from "../components/NavHeader/NavHeader.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 
-const HelpPage = () => {
+const OrderPage = () => {
   return (
     <>
       <NavHeader />
@@ -12,4 +12,4 @@ const HelpPage = () => {
   );
 };
 
-export default HelpPage;
+export default OrderPage;

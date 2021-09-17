@@ -14,7 +14,7 @@ const NavHeader = () => {
         </div>
         <div className="navbar-right">
           <nav>
-            <NavLink activeClassName="activePage" to={`/`}>
+            <NavLink activeClassName="activePage" exact={true} to={`/`}>
               Home
             </NavLink>
             <NavLink activeClassName="activePage" to={`/pizza`}>
